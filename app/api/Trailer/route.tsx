@@ -27,8 +27,8 @@ export async function GET(req: Request){
 
         const data = await res.json()
         return(NextResponse.json(data))
-    }catch(err: any){
-        console.error("Error fetching trailer:", err.message);
+    }catch(err){
+        console.error("Error fetching trailer:", err);
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
     }
 

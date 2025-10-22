@@ -28,7 +28,7 @@ export async function GET(req:Request) {
         return(console.error("error fetching data"))
        }
        return (NextResponse.json(data))
-    }catch(err: any){
-        return(NextResponse.json({error: err.message}, {status: 500}))
+    }catch(err){
+        return(NextResponse.json({error: err}, {status: 500}))
     }
 }

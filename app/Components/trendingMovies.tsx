@@ -43,8 +43,8 @@ const TrendingMovies = () => {
           setTrendingMovies(data)
         
 
-            }catch(err: any){
-                console.error(err.message)
+            }catch(err){
+                console.error(err)
             }finally{
                 setLoading(true)
             }
