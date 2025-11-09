@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Star } from 'lucide-react';
 const TrendingMovies = () => {
     const [trendingMovies, setTrendingMovies]= useState<MovieApiResponse| null>(null)
     const [loading, setLoading]= useState(false)
@@ -13,12 +12,12 @@ const TrendingMovies = () => {
 
     interface Movie {
   adult: boolean;
-  backdrop_path: string | null; // null if missing
+  backdrop_path: string | null; 
   id: number;
   title: string;
   original_title: string;
   overview: string;
-  poster_path: string | null; // also sometimes null
+  poster_path: string | null; 
   media_type: string;
   original_language: string;
   genre_ids: number[];

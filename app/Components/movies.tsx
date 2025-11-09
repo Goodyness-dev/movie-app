@@ -35,7 +35,7 @@ const Movies = ({ search, setSearch }: SearchProps) => {
   const [movies, setMovies] = useState<MovieApiResponse | null>(null);
   const [TrailerKey, setTrailerKey] = useState<string | null>(null);
 
-  // 🔹 Fetch movies
+
   useEffect(() => {
     async function fetchMovies() {
       try {
@@ -57,7 +57,7 @@ const Movies = ({ search, setSearch }: SearchProps) => {
     }
   }, [search]);
 
-  // 🔹 Move this OUTSIDE of useEffect
+  
  
 
   return (
